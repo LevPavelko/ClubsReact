@@ -12,7 +12,9 @@ class App extends React.Component {
                 president: string,
                 description: string,
                 flag: string,
-                poster: string
+                poster: string,
+                awards: string,
+                color: string
 
             }
         };
@@ -34,6 +36,7 @@ class App extends React.Component {
                     flag= {this.state.club.flag}
                   
                 />
+                <Awards awards={this.state.club.awards}/>
             </div>
         );
     }
