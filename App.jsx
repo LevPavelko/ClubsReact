@@ -14,7 +14,9 @@ class App extends React.Component {
                 flag: string,
                 poster: string,
                 awards: string,
-                color: string
+                color: string,
+                squad: string,
+                squadImg: string
 
             }
         };
@@ -37,6 +39,12 @@ class App extends React.Component {
                   
                 />
                 <Awards awards={this.state.club.awards}/>
+                <Squad 
+                
+                    squad={this.state.club.squad}
+                    squadImg={this.state.club.squadImg}
+                     
+                />
             </div>
         );
     }
