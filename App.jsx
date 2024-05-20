@@ -1,3 +1,5 @@
+const { string } = require("prop-types");
+
 class App extends React.Component {
     constructor(props) {
        
@@ -9,6 +11,7 @@ class App extends React.Component {
                 founded: string,
                 president: string,
                 description: string,
+                flag: string,
                 poster: string
 
             }
@@ -27,6 +30,8 @@ class App extends React.Component {
                     founded={this.state.club.founded}
                     president={this.state.club.president}
                     description={this.state.club.description} 
+                    poster={this.state.club.poster}
+                    flag= {this.state.club.flag}
                   
                 />
             </div>
