@@ -20,7 +20,7 @@ class Club extends React.Component{
             textAlign: "center",
             margin: 10,
             background: 'rgba(255, 255, 255, 0.8)',
-          
+            fontSize: 24
             
         };
         

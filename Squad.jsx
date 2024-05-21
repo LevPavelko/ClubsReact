@@ -6,7 +6,8 @@ class Squad extends React.Component{
         const squadStyle = {
            
             textAlign: "center", 
-            marginTop: "10px" 
+            marginTop: "10px" ,
+            fontSize: 24
            
         };
         const img = {
