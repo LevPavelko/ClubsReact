@@ -19,6 +19,7 @@ class Club extends React.Component{
            
             textAlign: "center",
             margin: 10,
+           
             background: 'rgba(255, 255, 255, 0.8)',
             fontSize: 24
             
@@ -29,7 +30,7 @@ class Club extends React.Component{
             
             <div style={club}>
                 
-                <img src={this.props.poster}></img>
+                <img src={this.props.poster} style={{margin: 10, width: 150, height: 150}}></img>
                 <div style={content}>
                     <p><strong>Title:</strong> {this.props.title}</p>
                     <p><strong>City:</strong> {this.props.city}</p>

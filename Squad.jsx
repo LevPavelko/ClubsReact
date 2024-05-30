@@ -21,6 +21,7 @@ class Squad extends React.Component{
             justifyContent: "center", 
             alignItems: "center",
             flexDirection: "column"
+            
         };
         return (
             <div style={center}>

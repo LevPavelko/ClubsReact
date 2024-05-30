@@ -1,24 +1,19 @@
-const { string } = require("prop-types");
-
 class App extends React.Component {
     constructor(props) {
        
         super(props);
         this.state = {
-            club: {
-                title: string,
-                city: string,
-                founded: string,
-                president: string,
-                description: string,
-                flag: string,
-                poster: string,
-                awards: string,
-                color: string,
-                squad: string,
-                squadImg: string
-
-            }
+            title: this.props.title,
+            city: this.props.city,
+            founded: this.props.founded,
+            president: this.props.president,
+            description: this.props.description,
+            flag: this.props.flag,
+            poster: this.props.poster,
+            awards: this.props.awards,
+            color: this.props.color,
+            squad: this.props.squad,
+            squadImg: this.props.squadImg
         };
         
     }
@@ -29,20 +24,21 @@ class App extends React.Component {
             
             <div>
                 <Club 
-                    title={this.state.club.title} 
-                    city={this.state.club.city} 
-                    founded={this.state.club.founded}
-                    president={this.state.club.president}
-                    description={this.state.club.description} 
-                    poster={this.state.club.poster}
-                    flag= {this.state.club.flag}
+                    title={this.state.title} 
+                    city={this.state.city} 
+                    founded={this.state.founded}
+                    president={this.state.president}
+                    description={this.state.description} 
+                    poster={this.state.poster}
+                    flag= {this.state.flag}
                   
                 />
-                <Awards awards={this.state.club.awards}/>
+                <Awards awards={this.state.awards} 
+                        color={this.state.color}/>
                 <Squad 
                 
-                    squad={this.state.club.squad}
-                    squadImg={this.state.club.squadImg}
+                    squad={this.state.squad}
+                    squadImg={this.state.squadImg}
                      
                 />
             </div>
